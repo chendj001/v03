@@ -51,9 +51,12 @@
       </div>
       <div
         class="grid-col"
-        style="grid-column: 3 / span 2; grid-row: 2 / span 2"
+        style="grid-column: 3 / span 1; grid-row: 2 / span 1"
       >
-        🌞
+        <Icon>
+          <template #default>🍘</template>
+          <template #fill>🍚</template>
+        </Icon>
       </div>
     </div>
     <div class="grid">
@@ -70,6 +73,7 @@
 </template>
 
 <script setup lang="ts">
+import Icon from '@/components/animation/icon/index.tsx'
 import { ref } from 'vue'
 const cls = ref('')
 let weekdays = ['日', '一', '二', '三', '四', '五', '六']
